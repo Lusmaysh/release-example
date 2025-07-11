@@ -1,51 +1,59 @@
-# Release Example
+# Flutter Release Example
 
-Repositori ini digunakan sebagai contoh penerapan sistem **release** dan **versioning** di GitHub.  
-Tujuannya adalah untuk mempelajari cara membuat rilis otomatis, tagging versi, dan pengelolaan changelog pada proyek perangkat lunak.
+Ini adalah proyek Flutter yang dibuat sebagai contoh penggunaan **GitHub Releases** dalam proses pengembangan aplikasi mobile. Proyek ini dapat digunakan untuk mempelajari pengelolaan versi, changelog, dan deployment sederhana dalam ekosistem Flutter.
 
-## 🎯 Tujuan
+## 🚀 Fitur Utama
 
-- Mencoba fitur **GitHub Releases**
-- Mempelajari **semantic versioning (SemVer)**
-- Menyusun **changelog** setiap update
-- Mengintegrasikan workflow pengembangan dengan proses rilis
+- Struktur proyek Flutter standar
+- Contoh implementasi stateful widgets
+- Penerapan best practice pada struktur folder dan kode
+- Menggunakan sistem **GitHub Releases** untuk tagging versi dan pelacakan perubahan
 
-## 🛠️ Teknologi dan Tools
-
-- Git & GitHub
-- Markdown
-- (Opsional: GitHub Actions / CI pipeline)
-
-## 🚀 Contoh Penggunaan
-
-1. Push commit perubahan
-2. Buat tag versi baru (misalnya `v1.0.0`)
-3. Gunakan fitur GitHub Releases untuk dokumentasi versi
-4. Tambahkan changelog untuk menjelaskan isi rilis
-
-## 🗂️ Struktur Sederhana
+## 📁 Struktur Folder
 
 ```
-.
-├── src/
-├── CHANGELOG.md
+release-example/
+├── android/
+├── ios/
+├── lib/
+│   └── main.dart
+├── test/
+├── pubspec.yaml
 └── README.md
 ```
 
-## 📄 Changelog (Contoh)
+## 🛠️ Teknologi yang Digunakan
 
-### v1.0.0 – Rilis Awal
-- Menambahkan struktur dasar proyek
-- Menambahkan dokumentasi awal
+- **Flutter** – Framework UI modern untuk aplikasi Android/iOS
+- **Dart** – Bahasa pemrograman utama Flutter
+- **GitHub** – Untuk version control & release management
 
----
+## 🧪 Cara Menjalankan
 
-## 📚 Referensi
+1. Clone repositori:
+   ```bash
+   git clone https://github.com/Lusmaysh/release-example.git
+   cd release-example
+   ```
 
-- [Semantic Versioning](https://semver.org/)
-- [GitHub Releases Documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
+2. Jalankan di emulator atau perangkat:
+   ```bash
+   flutter pub get
+   flutter run
+   ```
+
+## 🏷️ Manajemen Rilis
+
+Proyek ini mendukung versioning dengan GitHub Releases:
+
+- Gunakan format tag `vX.X.X` (misal: `v1.0.0`)
+- Setiap rilis disertai deskripsi perubahan di `CHANGELOG.md` *(jika tersedia)*
 
 ## 🧑‍💻 Dibuat oleh
 
-**Syamsul Hidayat (Lusmaysh)**  
+**Lusmaysh**  
 GitHub: [@Lusmaysh](https://github.com/Lusmaysh)
+
+## 📄 Lisensi
+
+Proyek ini berlisensi [MIT License](LICENSE).
